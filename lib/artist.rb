@@ -27,6 +27,12 @@ class Artist
   def save
     @@all << self
   end
+  
+    def self.create(artist)
+    artist = self.new(artist)
+    artist.save
+    artist
+  end
 
   def genres
     self.songs.collect{|song| song.genre}.uniq
