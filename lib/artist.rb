@@ -19,6 +19,11 @@ class Artist
       song.artist = self
     end
   end
+  
+   def self.destroy_all
+    @@all.clear
+  end
+
 
   def genres
     self.songs.collect{|song| song.genre}.uniq
