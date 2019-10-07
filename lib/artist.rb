@@ -1,7 +1,6 @@
 class Artist
-  
-  attr_accessor :name, :songs
-  
+  attr_accessor :name, :musiclibrarycontroller, :musicimporter
+  extend Concerns::Findable
   @@all = []
 
   def initialize(name)
