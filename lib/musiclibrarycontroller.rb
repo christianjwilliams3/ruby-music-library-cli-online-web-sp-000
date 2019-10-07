@@ -1,5 +1,6 @@
 class MusicLibraryController
-  
+  extend Memorable::ClassMethods
+
   attr_accessor :music
 
   def initialize(path = "./db/mp3s")
