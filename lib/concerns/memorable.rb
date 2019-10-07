@@ -14,9 +14,6 @@ module Memorable
       song = filename.split(" - ").tap do |song|
         song[2].chomp!(".mp3")
       end
-      #song = filename.split(" - ")
-      #song[2].chomp!(".mp3")
-      #song
     end
   end
 
