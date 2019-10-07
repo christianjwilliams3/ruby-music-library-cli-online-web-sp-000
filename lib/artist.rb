@@ -1,5 +1,5 @@
 class Artist
-  attr_accessor :name, :song, :musiclibrarycontroller, :musicimporter
+  attr_accessor :name, :song
   @@all = []
 
   def initialize(name)
